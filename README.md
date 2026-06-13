@@ -20,20 +20,6 @@ This project was built with:
 
 ## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps:
-
- 
-1. Clone this repository:
-   
-   bash
-      git clone [https://github.com/JerryHuyTran/jerry-world.git](https://github.com/JerryHuyTran/jerry-world.git)
-   
-3. Open the project folder:
-   
-   Bash
-      cd jerry-world
-   
-3. Open the index.html file in your preferred web browser to view the portfolio.
 
 📬 Contact
 Tran Nguyen Gia Huy
@@ -41,4 +27,5 @@ Tran Nguyen Gia Huy
 - Email: giahuyy20102007@gmail.com
 - GitHub: @JerryHuyTran
 - Live Demo: [https://jerryhuytran.github.io/Portfolio/]
+  
 Made with curiosity by Jerry
