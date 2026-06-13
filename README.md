@@ -24,16 +24,18 @@ To get a local copy up and running, follow these simple steps:
 
  
 1. Clone this repository:
+   
    bash
       git clone [https://github.com/JerryHuyTran/jerry-world.git](https://github.com/JerryHuyTran/jerry-world.git)
    
 3. Open the project folder:
+   
    Bash
       cd jerry-world
    
 3. Open the index.html file in your preferred web browser to view the portfolio.
-📬 Contact
 
+📬 Contact
 Tran Nguyen Gia Huy
 - Nick Name : Jerry
 - Email: giahuyy20102007@gmail.com
