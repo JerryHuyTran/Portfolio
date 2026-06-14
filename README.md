@@ -26,6 +26,6 @@ Tran Nguyen Gia Huy
 - Nick Name : Jerry
 - Email: giahuyy20102007@gmail.com
 - GitHub: @JerryHuyTran
-- Live Demo: [https://jerryhuytran.github.io/Portfolio/]
+- Live Demo: https://jerryhuytran.github.io/Portfolio/
   
 Made with curiosity by Jerry
