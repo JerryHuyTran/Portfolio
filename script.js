@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 11, url: './Memory/Daily%20Life/z7927908345253_3ce74c972c558b9ace5d7777aec088e2.jpg', category: 'dailylife', title: 'Cycling', caption: 'Enjoying peaceful moments along familiar roads.' },
         { id: 12, url: './Memory/Achieverments/z7927908304404_76f90b4b1bc298ea6f9c12de33094bbe.jpg', category: 'achievements', title: 'IT Camp Highlights', caption: 'Three awards, one journey of hard work and continuous learning.' },
         { id: 13, url: './Memory/Achieverments/z7931124079199_d501b8408a6035787c29c88147d2ba6a.jpg', category: 'achievements', title: 'Basketball Memories', caption: 'The tournament ends, but the memories remain.' },
+        { id: 14, url: './Memory/Achieverments/z7933601502613_41114452f003684db0a00244a80f684e.jpg', category: 'achievements', title: 'IT Camp Award', caption: 'Representing the team in a memorable award moment.' },
+        { id: 15, url: './Memory/Sports/z7933631098707_cf6a86af1393302fcc3861f0c8532519.jpg', category: 'sports', title: 'Volleyball Vibes', caption: 'Sweat, laughter, and a memorable match with teammates.' },
+        { id: 16, url: './Memory/Travel/Screenshot%202026-06-14%20073751.png', category: 'travel', title: 'Minh Duc Pagoda', caption: 'A journey exploring Minh Duc Pagoda, one of the most impressive spiritual landmarks in Southeast Asia.' },
+        { id: 17, url: './Memory/Projects/Screenshot%202026-06-14%20075047.png', category: 'projects', title: 'LifePilot', caption: 'Empowering productivity with a seamless goal-tracking and task management experience.' },
     ];
 
     let currentGalleryPhotos = galleryData.filter(item => item.category !== 'projects');
@@ -340,8 +344,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (window.matchMedia("(pointer: fine)").matches && cursorDot && cursorOutline) {
         window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
+            let zoom = 1;
+            const bodyZoom = document.body.style.zoom;
+            if (bodyZoom) {
+                zoom = bodyZoom.endsWith('%') ? parseFloat(bodyZoom) / 100 : parseFloat(bodyZoom);
+            }
+            const posX = e.clientX / zoom;
+            const posY = e.clientY / zoom;
 
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
